@@ -1,0 +1,54 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+
+    {% include 'templates/partials/sidebar.twig' %}
+
+    <div class="main-panel">
+        {% include 'templates/partials/navbar.twig' %}
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title ">项目列表</h4>
+                                <p class="card-category"> 您可以新建、编辑、删除任何新项目</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class=" text-primary">
+                                        <tr><th>
+                                                ID
+                                            </th>
+                                            <th>
+                                                项目名称
+                                            </th>
+                                            <th>
+                                                项目描述
+                                            </th>
+                                            <th>
+                                                操作
+                                            </th>
+                                        </tr></thead>
+                                        <tbody class="items-list">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {% include 'templates/partials/footer.twig' %}
+
+
+    </div>
+{% endblock %}
+
